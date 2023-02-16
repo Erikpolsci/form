@@ -1,78 +1,96 @@
-<form>
-  <fieldset>
-    <legend>Operating System</legend>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Operating System</legend>
+      <label>
+        <input type="radio" name="os" value="windows">
+        Windows
+      </label>
+      <label>
+        <input type="radio" name="os" value="mac">
+        Mac
+      </label>
+      <label>
+        <input type="radio" name="os" value="linux">
+        Linux
+      </label>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Favorite JS Frameworks</legend>
+      <label>
+        <input type="checkbox" name="ck-angular" value="angular">
+        Angular
+      </label>
+      <label>
+        <input type="checkbox" name="ck-react" value="react">
+        React
+      </label>
+      <label>
+        <input type="checkbox" name="ck-vue" value="vue">
+        Vue
+      </label>
+      <label>
+        <input type="checkbox" name="ck-svelte" value="svelte">
+        Svelte
+      </label>
+    </fieldset>
+  
     <label>
-      <input type="radio" name="os" value="windows">
-      Windows
+      Position
+      <select name="position">
+        <option value="" selected></option>
+        <option value="fs">Full Stack</option>
+        <option value="fe">Front End</option>
+        <option value="be">Back End</option>
+        <option value="de">Designer</option>
+        <option value="pm">Project Manager</option>
+        <option value="ceo">CEO</option>
+      </select>
     </label>
+  
     <label>
-      <input type="radio" name="os" value="mac">
-      Mac
+      Years of Experience
+      <input name="exp" type="number">
     </label>
+  
+    <fieldset>
+      <label>
+        First Name
+        <input name="fname">
+      </label>
+      <label>
+        Last Name
+        <input name="lname">
+      </label>
+    </fieldset>  
+  
     <label>
-      <input type="radio" name="os" value="linux">
-      Linux
+      Email
+      <input name="email" type="email">
     </label>
-  </fieldset>
+  
+    <label>
+      Comments
+      <textarea name="comments"></textarea>
+    </label>
+  
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
 
-  <fieldset>
-    <legend>Favorite JS Frameworks</legend>
-    <label>
-      <input type="checkbox" name="ck-angular" value="angular">
-      Angular
-    </label>
-    <label>
-      <input type="checkbox" name="ck-react" value="react">
-      React
-    </label>
-    <label>
-      <input type="checkbox" name="ck-vue" value="vue">
-      Vue
-    </label>
-    <label>
-      <input type="checkbox" name="ck-svelte" value="svelte">
-      Svelte
-    </label>
-  </fieldset>
 
-  <label>
-    Position
-    <select name="position">
-      <option value="" selected></option>
-      <option value="fs">Full Stack</option>
-      <option value="fe">Front End</option>
-      <option value="be">Back End</option>
-      <option value="de">Designer</option>
-      <option value="pm">Project Manager</option>
-      <option value="ceo">CEO</option>
-    </select>
-  </label>
 
-  <label>
-    Years of Experience
-    <input name="exp" type="number">
-  </label>
 
-  <fieldset>
-    <label>
-      First Name
-      <input name="fname">
-    </label>
-    <label>
-      Last Name
-      <input name="lname">
-    </label>
-  </fieldset>  
 
-  <label>
-    Email
-    <input name="email" type="email">
-  </label>
 
-  <label>
-    Comments
-    <textarea name="comments"></textarea>
-  </label>
 
-  <button type="submit">Submit</button>
-</form>
